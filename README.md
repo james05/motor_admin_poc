@@ -8,11 +8,20 @@ rails db:create
 
 rails db:migrate
 
-To reproduce the issue, run these commands in rails console:
+rails db:seed
 
+# Reproduction Steps
 
-pet_owner = PetOwner.create!(name: 'Test 1')
+1. Start the rails server `rails s`
+2. Go to http://localhost:3000/motor_admin
+3. Click on Pet Owners
+4. Select Pet Owner 1
+5. Select the pets association
 
-Bird.create!(name: 'Bird 1', pet_owner: pet_owner)
+# Expected outcome:
 
-Cat.create!(name: 'Bird 1', pet_owner: pet_owner)
+Bird 1 and Cat 1 should be visible in the pets window.
+
+# Actual outcome:
+
+Table is empty.
