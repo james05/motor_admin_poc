@@ -1,0 +1,26 @@
+---
+engine_version: 0.2.16
+file_version: 2021-10-31 16:12:46.982061000 Z
+resources:
+- name: bird
+  preferences:
+    visible: false
+  updated_at: 2021-10-31 16:12:46.343629000 +00:00
+- name: cat
+  preferences:
+    visible: false
+  updated_at: 2021-10-31 16:12:45.891376000 +00:00
+- name: pet
+  preferences:
+    visible: false
+  updated_at: 2021-10-31 16:12:46.982061000 +00:00
+configs:
+- key: header.links
+  value:
+  - name: "⭐ Star on GitHub"
+    path: https://github.com/motor-admin/motor-admin-rails
+  updated_at: 2021-10-31 15:04:34.829739000 +00:00
+queries: []
+dashboards: []
+forms: []
+alerts: []

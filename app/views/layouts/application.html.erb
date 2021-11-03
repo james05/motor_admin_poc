@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Motoradminpoc</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <style>
+    .header {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <%= link_to 'Admin', motor_admin_path %>
+    </div>
+
+    <%= yield %>
+  </body>
+</html>
